@@ -1,0 +1,82 @@
+ .patterns {
+    height: 30vh;
+  }
+  
+  svg text {
+    font-family: Lora;
+    letter-spacing: 2px;
+    stroke: #3b3b3b;
+    font-size: 80px;
+    font-weight: 700;
+    stroke-width: 3;
+   
+    animation: textAnimate 5s infinite alternate;
+  
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(44, 100%, 50%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }
+
+/* welcome to animation part css */
+  #para1 {
+    font-weight: 700;
+    margin-left: 23cm;
+    font-size: 60px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    animation: shine 25s linear infinite;
+    position: relative;
+    margin-top: 4cm;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+#image1{
+    width: 700px;
+    height: auto;
+    border-radius: 0%;
+    margin-left: 1cm;
+    margin-top: -11cm; 
+    position: absolute;
+}
+
+#para2{
+  margin-top: -1cm;
+  margin-left: 26cm;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  font-family: serif;
+  color: rgb(65, 50, 36);
+}
+
+  
+  
+   

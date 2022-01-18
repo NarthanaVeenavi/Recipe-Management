@@ -1,0 +1,129 @@
+#hero{
+    height:calc(100vh - 70px);
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+#main_title{
+    font-size: 50px;
+    font-weight: 600;
+    animation: fadein 1s forwards;
+}
+
+#sub_title{
+    font-size:20px;
+    font-weight: 400;
+    margin-top: 10px;
+    animation: fadein 1s forwards;
+    animation-delay: 0.1s;
+}
+
+#hotel_img{
+    width:80%;
+    border-radius: 30px;
+    margin-left: 15px;
+    animation: opacity 1s forwards;
+}
+
+#login_btn{
+    width:150px;
+    height:50px;
+    background:#000;
+    color:#fff;
+    border-radius:40px;
+    padding:15px;
+    margin-top:30px;
+    animation: fadein 1s forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes fadein {
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity:0;
+        transform: scale(0.7);
+       
+    }
+    to{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+
+#footer{
+    height:35vh;
+    width:100%;
+    background: rgb(6, 3, 37);
+}
+
+#f_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    flex-direction: column;
+}
+
+#l_btn , #r_btn{
+width:150px;
+height:50px;
+border:1.5px solid rgb(158, 158, 158);
+transition:0.7s;
+margin-top: 50px;
+}
+
+#buttons{
+    transform: scale(0.9);
+    margin-top: 1cm;
+}
+
+#l_btn:hover , #r_btn:hover{
+    background:rgb(221, 221, 221);
+    color:rgb(8, 8, 8);
+    transition:0.7s;
+}
+
+#l_btn{
+    border-radius: 40px 0px 0px 40px;
+    border-right-color: rgba(0,0,0,0);
+    color: white;
+    border-color: whitesmoke;
+}
+
+#r_btn{
+    border-radius: 0px 40px 40px 0px;
+    color: white;
+    border-color: whitesmoke;
+}
+
+#date{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+#logo{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    margin-top: -2.3cm;
+}
+
+#footer_title{
+    font-size: 40px;
+    color: #e6b800;
+    position: absolute;
+    margin-top: -2.5cm;
+}
